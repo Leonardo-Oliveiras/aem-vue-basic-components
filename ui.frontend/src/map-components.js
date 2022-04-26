@@ -3,6 +3,7 @@ import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
+import FragmentText from './components/FragmentText/FragmentText'
 import Image from './components/Image/Image'
 import {
   withComponentMappingContext,
@@ -31,6 +32,9 @@ MapTo('vue/components/checkbox')(CheckBox, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
+
+// FragmentText Component Mapping
+MapTo('vue/components/fragmenttext')(FragmentText, EditConfig)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
