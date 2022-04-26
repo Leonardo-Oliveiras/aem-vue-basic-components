@@ -4,6 +4,7 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import FragmentText from './components/FragmentText/FragmentText'
+import ChallengeBtn from './components/ChallengeBtn/ChallengeBtn'
 import Image from './components/Image/Image'
 import {
   withComponentMappingContext,
@@ -35,6 +36,9 @@ MapTo('vue/components/header')(Header, EditConfig)
 
 // FragmentText Component Mapping
 MapTo('vue/components/fragmenttext')(FragmentText, EditConfig)
+
+// ChallengeBtn Component Mapping
+MapTo('vue/components/challengebtn')(ChallengeBtn, EditConfig)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
