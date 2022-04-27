@@ -1,10 +1,6 @@
 <template>
   <div id="divBtn">
-    <button id="backBtn">
-        BACK TO HOMEPAGE 
-      <!-- <p id="txtBtn"> 
-      </p> -->
-    </button>
+    <button href="https://google.com" id="btnChallenge">BACK TO HOMEPAGE</button>
   </div>
 </template>
 

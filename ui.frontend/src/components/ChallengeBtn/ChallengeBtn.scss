@@ -1,14 +1,20 @@
-#backBtn{
-  background: #333333;
-  width: 216px;
-  height: 68px;
-}
-
-#txtBtn{
-  color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 #divBtn{
-  margin: 0;
+  margin: 10% 0;
   padding: 0;
+}
+
+#btnChallenge{
+  background: #333333;
+  width: 216px;
+  height: 63px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
