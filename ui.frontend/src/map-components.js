@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import FragmentText from './components/FragmentText/FragmentText'
 import ChallengeBtn from './components/ChallengeBtn/ChallengeBtn'
 import LoginChallenge from './components/LoginChallenge/LoginChallenge'
+import HomePage from './components/HomePage/HomePage'
 import Image from './components/Image/Image'
 import {
   withComponentMappingContext,
@@ -40,6 +41,9 @@ MapTo('vue/components/fragmenttext')(FragmentText, EditConfig)
 
 // LoginChallenge Component Mapping
 MapTo('vue/components/loginchallenge')(LoginChallenge, EditConfig)
+
+// homePage Component Mapping
+MapTo('vue/components/homePage')(HomePage, EditConfig)
 
 // ChallengeBtn Component Mapping
 MapTo('vue/components/challengebtn')(ChallengeBtn, EditConfig)
