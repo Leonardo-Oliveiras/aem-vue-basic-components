@@ -410,7 +410,7 @@ body, .page, .basicpage{
     font-style: normal;
     font-weight: 700;
     font-size: 83px;
-    height: 17vh;
+    height: 10vh;
     margin: 0;
   }
 
@@ -593,6 +593,7 @@ body, .page, .basicpage{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
   }
 
   #btnContinue{
@@ -609,6 +610,7 @@ body, .page, .basicpage{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
   }
 
 }
@@ -644,7 +646,7 @@ body, .page, .basicpage{
     font-style: normal;
     font-weight: 700;
     font-size: 83px;
-    height: 17vh;
+    height: 9vh;
     margin: 0;
   }
 
@@ -828,6 +830,7 @@ body, .page, .basicpage{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
   }
 
   #btnContinue{
@@ -844,6 +847,7 @@ body, .page, .basicpage{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
   }
 
 }
@@ -1053,6 +1057,7 @@ body, .page, .basicpage{
   }
   
   #btnLogout{
+    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
     height: 100%;
     font-family: 'Poppins';
     font-style: normal;
@@ -1065,6 +1070,7 @@ body, .page, .basicpage{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
   }
 
   #btnContinue{
@@ -1082,6 +1088,7 @@ body, .page, .basicpage{
     align-items: center;
     justify-content: space-around;
     padding: 0 85px;
+    cursor: pointer;
   }
 
 }

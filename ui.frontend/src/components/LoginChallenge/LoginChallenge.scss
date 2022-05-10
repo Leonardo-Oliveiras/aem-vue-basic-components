@@ -1,71 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-#divLogin{
-  font-family: 'Maven Pro', sans-serif;
-  background: #26292C;
-  color: #FFFFFF;
+body, .page, .basicpage{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  width: 94vw;
-  height: 90vh;
-  overflow: hidden;
+  font-family: 'Poppins';
+  background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#divLogin{
+  width: 100vw;
 }
 
-#leftDiv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-}
-
-#rightDiv{
-  align-content: center;
-  width: 50%;
-  background: url('/content/dam/vue/desktopImage.png');
-  background-size: cover;
-}
-
-#textSection{
-  padding: 200px;
+#loginSection{
+  background: #26292C;
+  padding: 37px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   flex-wrap: nowrap;
-  align-items: center;
+}
+
+#compassLogo{
+  height: 11vh;
 }
 
 #__p-1{
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
-  line-height: 76px;
   color: #E0E0E0;
   margin: 0;
-  align-self: baseline;
 }
 
 #__p-2{
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
   color: #E0E0E0;
-  margin-bottom: 135px;
-  align-self: baseline;
+  margin: 0;
 }
 
 #__p-3{
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 38px;
   color: #E0E0E0;
-  margin: 0;
-  align-self: baseline;
+  margin-top: 60px;
 }
+
+.inputCommon{
+  font-family: 'Poppins';
+  background: #26292C;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  color: #FFFFFF;
+} 
 
 input::placeholder {
   font-family: 'Maven Pro', sans-serif;
@@ -76,41 +75,222 @@ input::placeholder {
   color: #E0E0E0;
 }
 
-.inputCommon{
-  background: #26292C;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 50px;
-  height: 60px;
+
+#errorMessage{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: transparent;
+  text-align: center;
   width: 100%;
-  margin-top: 30px;
-  padding: 30px;
-  color: #FFFFFF;
-}  
-
-
-#divBtn{
-  margin: 10% 0;
-  padding: 0;
 }
 
 #btnLogin{
+  font-family: 'Poppins';
   width: 100%;
   height: 63px;
   color: #FFFFFF;
   background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
   box-shadow: inset 5px 5px 15px rgb(0 0 0 / 15%);
   border-radius: 50px;
-  margin-top: 65px;
+  margin:0;
+  cursor: pointer;
 }
 
-#errorMessage{
- display: none;
+#pcImg{
+  display: none;
 }
 
-#imageUrl{
-  position: absolute;
-  width: 349px;
-  left: 60vw;
+@media screen and (min-width:320px) and (max-width: 480px){
+
+  #compassLogo {
+    width: 72vw;
+  }
+
+  #__p-1{
+    font-size: 35px;
+  }
+
+  #__p-2, #__p-3{
+    font-size: 13px;
+  }
+
+  .inputCommon{
+    height: 8vh;
+    margin: 8px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 11px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  #errorMessage{
+    font-size: 12px;
+  }
+
+  #btnLogin{
+    height: 37px;
+  }
 }
 
+@media screen and (min-width:481px) and (max-width: 768px){
+  #loginSection[data-v-0329ef4f] {
+    padding: 30px 99px;
+  }
+  #__p-1{
+    font-size: 40px;
+  }
+
+  #__p-2, #__p-3{
+    font-size: 20px;
+  }
+
+  .inputCommon{
+    height: 8vh;
+    width: 100%;
+    padding: 20px;
+    margin-top: 11px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  #errorMessage{
+    font-size: 12px;
+  }
+
+  #btnLogin{
+    height: 37px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+  #divLogin {
+    display: flex;
+  }
+
+  #loginSection {
+    padding: 30px 99px;
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .inputCommon{
+    height: 8vh;
+    width: 100%;
+    padding: 20px;
+    margin-top: 45px;
+  }
+
+  input::placeholder {
+    font-size: 22px;
+  }
+
+  #errorMessage{
+    font-size: 22px;
+    margin: 40px 0;
+  }
+
+  #btnLogin{
+    height: 10vh;
+    font-size: 36px;
+  }
+
+  #pcImg{
+    display: block;
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1500px){
+  #divLogin {
+    display: flex;
+  }
+
+  #loginSection {
+    padding: 30px 99px;
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .inputCommon{
+    height: 8vh;
+    width: 100%;
+    padding: 20px;
+    margin-top: 23px;
+  }
+
+  input::placeholder {
+    font-size: 22px;
+  }
+
+  #errorMessage{
+    font-size: 22px;
+    margin: 30px 0;
+  }
+
+  #btnLogin{
+    height: 10vh;
+    font-size: 36px;
+  }
+
+  #pcImg{
+    display: block;
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width:1500px){
+  #divLogin {
+    display: flex;
+  }
+
+  #compassLogo[data-v-0329ef4f] {
+    height: 13vh;
+}
+
+  #loginSection {
+    padding: 30px 99px;
+    width: 50vw;
+    height: 100vh;
+  }
+
+  #__p-1{
+    font-size: 26px;
+  }
+
+  #__p-2, #__p-3{
+    font-size: 20px;
+  }
+
+  .inputCommon{
+    height: 10vh;
+    width: 100%;
+    padding: 17px;
+    margin-top: 10px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  #errorMessage{
+    font-size: 22px;
+    margin: 30px 0;
+  }
+
+  #btnLogin{
+    height: 7vh;
+    font-size: 24px;
+  }
+
+  #pcImg{
+    display: block;
+    width: 50vw;
+  }
+}

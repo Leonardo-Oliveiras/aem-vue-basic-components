@@ -1,6 +1,6 @@
 <template>
-
   <div>
+
     <header>
 
       <img id="compassLogo" :src="imageUrl"/>
@@ -46,43 +46,42 @@
 
     </section>
        <img id="compassBallLogo" :src="compassBallLogo"/>
-      <footer>
-        <div id="testFlex">
-          <div id="hideMobileFooterElements">
-            <p id="textFooter">
-              Essa janela do navegador é usada para
-              manter sua sessão de autenticação ativa. <br>
-              Deixe-a aberta em segundo plano e abra uma
-              nova janela para continuar a navegar.
-            </p>
+    <footer>
+      <div id="testFlex">
+        <div id="hideMobileFooterElements">
+          <p id="textFooter">
+            Essa janela do navegador é usada para
+            manter sua sessão de autenticação ativa. <br>
+            Deixe-a aberta em segundo plano e abra uma
+            nova janela para continuar a navegar.
+          </p>
 
-            <hr id="borderFooter">
+          <hr id="borderFooter">
 
-            <p id="textClockerFooter"> Application <br> refresh in </p>
+          <p id="textClockerFooter"> Application <br> refresh in </p>
 
-            <div id="countDownDiv">
-              <p id="count-down-timer"></p>
-            </div>
-
+          <div id="countDownDiv">
+            <p id="count-down-timer"></p>
           </div>
 
-          <div id="btnContinue">
-            <p>Continuar Navegando</p>
-          </div>
+        </div>
 
-          <div id="btnLogout">
-            <p>Logout</p>
-          </div>
-      </div>
-      </footer>
+        <button id="btnContinue">
+          <p>Continuar Navegando</p>
+        </button>
+
+        <button v-on:click="actionLogout()" id="btnLogout">
+          <p>Logout</p>
+        </button>
+    </div>
+    </footer>
 
   </div>
-
 </template>
 
 <script>
-import './homeScript.js'
 // Imports
+import './homeScript.js'
 export default {
   name: 'homePage',
   props: {
@@ -115,6 +114,12 @@ export default {
     return {
       imageUrl: '/content/dam/vue/homePageLogo.png',
       compassBallLogo: '/content/dam/vue/ballLogoHome.png'
+    }
+  },
+  methods: {
+    actionLogout: function () {
+      window.location = 'Compass-Login.html'
+      window.localStorage.clear()
     }
   }
 }
