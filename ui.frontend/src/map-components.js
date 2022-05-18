@@ -2,6 +2,8 @@ import Error404Page from './components/Error404Page/Error404Page'
 import HomePage from './components/HomePage/HomePage'
 import LoginChallenge from './components/LoginChallenge/LoginChallenge'
 import AppPage from './components/Page/AppPage'
+import HomePageFooter from './components/experience-fragments/HomePageFooter/Footer'
+import HomePageHeader from './components/experience-fragments/HomePageHeader/Header'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -30,6 +32,12 @@ MapTo('vue/components/homePage')(HomePage, EditConfig)
 
 // LoginChallenge Component Mapping
 MapTo('vue/components/loginchallenge')(LoginChallenge, EditConfig)
+
+// LoginChallenge Component Mapping
+MapTo('vue/components/homepageheader')(HomePageFooter, EditConfig)
+
+// LoginChallenge Component Mapping
+MapTo('vue/components/homepagefooter')(HomePageHeader, EditConfig)
 
 // Container Component Mapping
 MapTo('vue/components/container')(

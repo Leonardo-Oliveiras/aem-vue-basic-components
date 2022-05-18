@@ -8,7 +8,7 @@
     <div id="container-right">
       <h1> {{ title }} </h1>
       <p> {{ text }} </p>
-      <button> {{ buttonLabel }} </button>
+      <button v-on:click="backToHomePage()"> {{ buttonLabel }} </button>
     </div>
   </main>
   <footer> {{footerText}} </footer>
@@ -26,6 +26,11 @@ export default {
     buttonLabel: { type: String, default: 'Back to homepage' },
     headerTitle: { type: String, default: '404 not found' },
     footerText: { type: String, default: 'created by Leonardo - devChallenges.io' }
+  },
+  methods: {
+    backToHomePage: function () {
+      window.location = 'Compass-Login.html'
+    }
   }
 }
 </script>
@@ -34,29 +39,7 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
-@mixin display-flex-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin display-flex-column {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-}
-
-@mixin for-size($size) {
-  @if $size == min-320 {
-    @media screen and (min-width:320px) and (max-width: 480px) { @content; }
-  } @else if $size == min-481 {
-    @media screen and (min-width:481px) and (max-width: 768px) { @content; }
-  } @else if $size == min-769 {
-    @media screen and (min-width:769px) and (max-width: 1024px) { @content; }
-  }@else if $size == min-1024 {
-    @media screen and (min-width:1024px) and (max-width: 1500px) { @content; }
-  }
-}
+@import "../stylesUtils.scss";
 
   body {
     margin: 0;
@@ -138,6 +121,7 @@ export default {
         line-height: 21px;
         letter-spacing: -0.035em;
         text-transform: uppercase;
+        cursor: pointer;
       }
     }
   }
