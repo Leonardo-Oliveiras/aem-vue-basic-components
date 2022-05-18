@@ -1,9 +1,9 @@
-import CustomClasses from './components/CustomClasses/CustomClasses'
-import Text from './components/Text/Text'
+import Error404Page from './components/Error404Page/Error404Page'
+import HomePage from './components/HomePage/HomePage'
+import LoginChallenge from './components/LoginChallenge/LoginChallenge'
 import AppPage from './components/Page/AppPage'
-import CheckBox from './components/Checkbox/Checkbox'
-import Header from './components/Header/Header'
-import Image from './components/Image/Image'
+import HomePageFooter from './components/experience-fragments/HomePageFooter/Footer'
+import HomePageHeader from './components/experience-fragments/HomePageHeader/Header'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -24,31 +24,20 @@ const EditConfig = {
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
 
-MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
+// error404page Component Mapping
+MapTo('vue/components/error404page')(Error404Page, EditConfig)
 
-// Checkbox Component Mapping
-MapTo('vue/components/checkbox')(CheckBox, EditConfig)
+// homePage Component Mapping
+MapTo('vue/components/homePage')(HomePage, EditConfig)
 
-// Header Component Mapping
-MapTo('vue/components/header')(Header, EditConfig)
+// LoginChallenge Component Mapping
+MapTo('vue/components/loginchallenge')(LoginChallenge, EditConfig)
 
-// Image Component Mapping
-MapTo('vue/components/image')(Image, {
-  emptyLabel: 'Image',
-  isEmpty: function (props) {
-    return !props || !props.src || props.src.trim().length < 1
-  },
-  resourceType: 'vue/components/image'
-})
+// LoginChallenge Component Mapping
+MapTo('vue/components/homepageheader')(HomePageFooter, EditConfig)
 
-// Text Component Mapping
-MapTo('vue/components/text')(Text, {
-  emptyLabel: 'Text',
-
-  isEmpty: function (props) {
-    return !props || !props.text || props.text.trim().length < 1
-  }
-})
+// LoginChallenge Component Mapping
+MapTo('vue/components/homepagefooter')(HomePageHeader, EditConfig)
 
 // Container Component Mapping
 MapTo('vue/components/container')(
