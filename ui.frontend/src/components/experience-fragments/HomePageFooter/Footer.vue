@@ -1,7 +1,7 @@
 <template>
   <div id="footerContainer">
     <div id="footerTextFlex">
-      <p id="footerText">Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</p>
+      <p id="footerText">Keep this window open to continue logged in</p>
       <hr/>
     </div>
     <FooterTimer/>

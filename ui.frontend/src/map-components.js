@@ -1,6 +1,5 @@
 import Error404Page from './components/Error404Page/Error404Page'
 import HomePage from './components/HomePage/HomePage'
-import LoginChallenge from './components/LoginChallenge/LoginChallenge'
 import AppPage from './components/Page/AppPage'
 import HomePageFooter from './components/experience-fragments/HomePageFooter/Footer'
 import HomePageHeader from './components/experience-fragments/HomePageHeader/Header'
@@ -24,19 +23,16 @@ const EditConfig = {
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
 
-// error404page Component Mapping
+// 404 Page Component Mapping
 MapTo('vue/components/error404page')(Error404Page, EditConfig)
 
-// homePage Component Mapping
+// Home Page Component Mapping
 MapTo('vue/components/homePage')(HomePage, EditConfig)
 
-// LoginChallenge Component Mapping
-MapTo('vue/components/loginchallenge')(LoginChallenge, EditConfig)
-
-// LoginChallenge Component Mapping
+// Header Component Mapping
 MapTo('vue/components/homepageheader')(HomePageFooter, EditConfig)
 
-// LoginChallenge Component Mapping
+// Footer Component Mapping
 MapTo('vue/components/homepagefooter')(HomePageHeader, EditConfig)
 
 // Container Component Mapping
