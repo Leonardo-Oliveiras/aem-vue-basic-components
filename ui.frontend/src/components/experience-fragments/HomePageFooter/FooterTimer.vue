@@ -36,7 +36,7 @@ export default {
             this.timer--
           }, 1000)
         } else if (value === 0) {
-          window.location = '/content/vue/vue/login.html'
+          window.location = '/content/vue/vue/404-Challenge-Page.html'
         }
       },
       immediate: true
