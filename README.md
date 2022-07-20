@@ -11,11 +11,11 @@ Adobe Experience Manager Cloud (6.5) | [AEM Documentation here](https://experien
 SASS  | [Sass Documentation here](https://sass-lang.com/documentation)
 
 # Getting started
- Run in the project root `mvn clean install -PautoInstallPackage` to deploy the project to AEM
+ Run in root's folder `mvn clean install -PautoInstallPackage` to deploy the project to your AEM local instance
  
  Or
 
- In ui.frontend run `npm run serve` to open the app on http://localhost:8000/content/vue/home.html
+ In ui.frontend's folder root, run `npm run serve` to open the app on http://localhost:8000/content/vue/home.html
 
 > If you do not have a local instance running or need help to configure AEM, see [documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 
